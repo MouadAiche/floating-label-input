@@ -6,7 +6,7 @@ A sleek and animated email input field using **HTML** and **CSS**, featuring a f
 
 ## 📺 Live Demo
 
-👉 [Live Demo](https://github.com/MouadAiche/floating-label-input/Floating%20Input%20Label)
+👉 [Live Demo](https://mouadaiche.github.io/floating-label-input/Floating%20Input%20Label/)
 
 ---
 
