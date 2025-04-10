@@ -1,0 +1,67 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #23242a;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    position: relative;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+input{
+    color: #000000;
+    width: 100%;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    transition: 0.5s;
+    z-index: 10;
+    padding: 20px;
+}
+label{
+    position: absolute;
+    color: #8f8f8f;
+    pointer-events: none;
+    left: 0;
+    padding-left: 10px;
+
+}
+input:focus ~ label,
+input:valid ~ label{
+    font-size: 0.9em;
+    color: #fff;
+    transform: translateY(-24px);
+    transition: 0.5s;
+    padding-left: 0;
+}
+input:valid ~ label{
+    color: greenyellow;
+    transition: 0.5s;
+}
+i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+}
+input:valid ~ i,
+input:focus ~ i
+{
+    height: 100%;
+}
