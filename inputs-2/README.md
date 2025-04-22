@@ -6,7 +6,7 @@ An elegant form UI featuring animated floating labels and a dynamic underline ef
 
 ## 📺 Live Demo
 
-👉 [Live Demo]()
+👉 [Live Demo](https://floating-label-input.vercel.app/)
 
 ---
 
