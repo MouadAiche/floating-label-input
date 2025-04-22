@@ -1,0 +1,95 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #23242a;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box{
+    position: relative;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+input{
+    color: #000000;
+    width: 100%;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    transition: 0.5s;
+    z-index: 10;
+    padding: 20px;
+}
+button{
+    padding: 1em 2em;
+    background-color: #2c2c2c;
+    border: none;
+    color: #ffffff;
+    border-radius: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button::after{
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, rgb(0, 81, 255), red);
+    z-index: -1;
+}
+button:hover{
+    z-index: 0;
+    scale: 1.05;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+label{
+    position: absolute;
+    color: #8f8f8f;
+    pointer-events: none;
+    left: 0;
+    padding-left: 10px;
+
+}
+input:focus ~ label,
+input:valid ~ label{
+    font-size: 0.9em;
+    color: #fff;
+    transform: translateY(-24px);
+    transition: 0.5s;
+    padding-left: 0;
+}
+input:valid ~ label{
+    color: greenyellow;
+    transition: 0.5s;
+}
+i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+}
+input:valid ~ i,
+input:focus ~ i
+{
+    height: 100%;
+}
